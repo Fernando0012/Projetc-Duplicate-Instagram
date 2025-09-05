@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="container-sm text-center">
+       <div class="header border-bottom">
+            <div class="head d-flex text-center ">
+                <h6 class="title center p-2 me-auto">Instagram</h6>
+                <i class="icon-heart-o center p-2 text-center"></i>
+                <i class="icon-message-circle center p-2 text-center"></i>
+            </div>
+            <div class="storys">
+                <ul>
+                    <li>
+                        <div class="perfil">
+                            <img class="rounded-circle image" src="https://images.unsplash.com/photo-1736194689767-9e3c4e7bd7f6?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <p class="nickName">Luiz_silva</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perfil">
+                            <img class="rounded-circle image" src="https://images.unsplash.com/photo-1672229092597-634c07cdc1d1?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <p class="nickName">Daniel_Souza</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="perfil">
+                            <img class="rounded-circle image" src="https://media.istockphoto.com/id/2162226656/pt/foto/vertical-portrait-of-happy-confident-young-woman-outdoors-looking-at-camera-looking-at-camera.jpg?s=612x612&w=0&k=20&c=d_d_RPxoDqpt2Xl1_DbewQ21uwN1_z0bcuskdSvH70M=" alt="">
+                            <p class="nickName">Ana_Luiza</p>
+                        </div>
+                    </li>
+                    <li>         
+                        <div class="perfil">
+                            <img class="rounded-circle image" src="https://media.istockphoto.com/id/986878958/pt/foto/happiness-is-achievable-by-enjoying-the-little-things.jpg?s=612x612&w=0&k=20&c=Mm-7qrMBKymHboKvVGsR2u_uYUSDuIL11g93NtfAGMk=" alt="">
+                            <p class="nickName">Duda</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+       </div>
+       <div class="main">
+            <div id="modal_comment" class="hidden">
+                <div class="test">
+                    <div class="comments">
+                        <div class="line">
+                            <p class="linha"></p>
+                            <h6 class="title">Comentários</h6>
+                        </div>
+                        <div class="comment">
+                            <img class="rounded-circle image-post img-comment" src="https://media.istockphoto.com/id/986878958/pt/foto/happiness-is-achievable-by-enjoying-the-little-things.jpg?s=612x612&w=0&k=20&c=Mm-7qrMBKymHboKvVGsR2u_uYUSDuIL11g93NtfAGMk=" alt="">
+                            <div class="paragraphAndNickName">
+                                <p class="nickName nick">Duda</p>
+                                <p class="paragraph">Que foto linda</p>
+                            </div>
+                            <div class="button_comment">
+                                <button id="like-comment">
+                                    <i id="heart"class="icon-heart-o icon heart comment-icon"></i>
+                                </button> 
+                            </div> 
+                        </div>
+                        <div class="comment">
+                            <img class="rounded-circle image-post img-comment" src="https://images.unsplash.com/photo-1738509559266-bdd2a813c8ad?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="paragraphAndNickName">
+                                <p class="nickName nick">Brian_vt</p>
+                                <p class="paragraph">Really professional work</p>
+                            </div>
+                            <div class="button_comment">
+                                <button id="like-comment">
+                                    <i id="heart"class="icon-heart-o icon heart comment-icon"></i>
+                                </button> 
+                            </div>  
+                        </div>
+                        <div class="comment">
+                            <img class="rounded-circle image-post img-comment" src="https://images.unsplash.com/photo-1668661626448-c355986efe99?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="paragraphAndNickName">
+                                <p class="nickName nick">Lucas_Souza</p>
+                                <p class="paragraph">Nem pra me chamar, tô chegando em 5 minutos.</p>
+                            </div>
+                            <div class="button_comment">
+                                <button id="like-comment">
+                                    <i id="heart"class="icon-heart-o icon heart comment-icon"></i>
+                                </button> 
+                            </div>   
+                        </div>
+                        <div class="comment hidden" id="test1">
+                            <img id="user1" src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg" alt="" srcset="">
+                            <div id="paragraphAndNickName">
+                                <p class="nickName nick">User_test</p>
+                                <p class="paragraph" id="test-comment"></p>
+                            </div>
+                            <div class="button_comment">
+                                <button id="like-comment">
+                                    <i id="heart"class="icon-heart-o icon heart comment-icon"></i>
+                                </button> 
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="myComment">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/User-avatar.svg" alt="" srcset="">
+                    <input type="text"  name="MyComment" id="MyComment" placeholder="Adicione um comentário" value="">
+                    <button type="submit" id="sendComment" class="submit" value="comentario">
+                        <i class="icon-compass icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="postGeral">
+                    <div class="post">
+                        <div class="post-header d-flex text-center">
+                            <div class="perfil-post">
+                                <img class="rounded-circle image-post" src="https://images.unsplash.com/photo-1672229092597-634c07cdc1d1?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                <p class="nickName">Daniel_Souza</p>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <img class="image-post-body" src="https://images.unsplash.com/photo-1532377611310-4564e426e7c1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Copo de cerveja">
+                            <div class="icon-post">
+                                <div class="like-coment-message">
+                                    <div class="button-container">
+                                        <button id="like-button">
+                                            <i id="heart"class="icon-heart-o icon heart"></i>
+                                        </button>
+                                        <button type="button" id="comment-button">
+                                            <i class="icon-message-circle1 icon"></i>
+                                        </button>
+                                        <button class="send">
+                                            <i class="icon-compass icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button>
+                                        <i id="save" class="icon-bookmark1 icon save"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-post">
+                                    <p class="note-post mb-3">
+                                        Sábado pode né?
+                                    </p>
+                                </div>
+                                
+                                <div class="date-post">
+                                    <p>há 1 hora</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header d-flex text-center">
+                            <div class="perfil-post">
+                                <img class="rounded-circle image-post" src="https://media.istockphoto.com/id/2162226656/pt/foto/vertical-portrait-of-happy-confident-young-woman-outdoors-looking-at-camera-looking-at-camera.jpg?s=612x612&w=0&k=20&c=d_d_RPxoDqpt2Xl1_DbewQ21uwN1_z0bcuskdSvH70M=" alt="Foto de um gato laranja na mesa">
+                                <p class="nickName">Ana_Luiza</p>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <img class="image-post-body" src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="icon-post">
+                                <div class="like-coment-message">
+                                    <div class="button-container">
+                                        <button id="like-button">
+                                            <i id="heart"class="icon-heart-o icon heart"></i>
+                                        </button>
+                                        <button type="button" id="comment-button">
+                                            <i class="icon-message-circle1 icon"></i>
+                                        </button>
+                                        <button class="send">
+                                            <i class="icon-compass icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button>
+                                        <i id="save" class="icon-bookmark1 icon save"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-post">
+                                    <p class="note-post mb-3">
+                                        Quando seu gato fica olhando você comendo e não oferencendo a ele.
+                                    </p>
+                                </div>
+                                
+                                <div class="date-post">
+                                    <p>há 5 hora</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header d-flex text-center">
+                            <div class="perfil-post">
+                                <img class="rounded-circle image-post" src="https://images.unsplash.com/photo-1736194689767-9e3c4e7bd7f6?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                                <p class="nickName">Luiz_silva</p>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <img class="image-post-body" src="https://images.unsplash.com/photo-1730303906663-adbbd13bbdc4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="icon-post">
+                                <div class="like-coment-message">
+                                    <div class="button-container">
+                                        <button id="like-button">
+                                            <i id="heart"class="icon-heart-o icon heart"></i>
+                                        </button>
+                                        <button type="button" id="comment-button">
+                                            <i class="icon-message-circle1 icon"></i>
+                                        </button>
+                                        <button class="send">
+                                            <i class="icon-compass icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button>
+                                        <i id="save"class="icon-bookmark1 icon save"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-post">
+                                    <p class="note-post mb-3">
+                                        Borá pegar aquele cineminha 😎😎🍿.
+                                    </p>
+                                </div>
+                                
+                                <div class="date-post">
+                                    <p>há 2 hora</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header d-flex text-center">
+                            <div class="perfil-post">
+                                <img class="rounded-circle image-post" src="https://media.istockphoto.com/id/986878958/pt/foto/happiness-is-achievable-by-enjoying-the-little-things.jpg?s=612x612&w=0&k=20&c=Mm-7qrMBKymHboKvVGsR2u_uYUSDuIL11g93NtfAGMk=" alt="">
+                                <p class="nickName">Duda</p>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <img class="image-post-body" src="https://images.unsplash.com/photo-1507100654232-fb6b007a0237?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div class="icon-post">
+                                <div class="like-coment-message">
+                                    <div class="button-container">
+                                        <button id="like-button">
+                                            <i id="heart"class="icon-heart-o icon heart"></i>
+                                        </button>   
+                                        <button type="button" id="comment-button">
+                                            <i class="icon-message-circle1 icon"></i>
+                                        </button>
+                                        <button class="send">
+                                            <i class="icon-compass icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button>
+                                        <i id="save" class="icon-bookmark1 icon save"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-post">
+                                    <p class="note-post mb-3">
+                                        Noite maravilhosa para sair.
+                                    </p>
+                                </div>
+                                
+                                <div class="date-post">
+                                    <p>há 3 hora</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
